@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="java">
+            <h1>JavaScript</h1>
+            <input onkeypress="digiteiNoInput()" id="main-input" placeholder="Digite aqui" name="nome-completo">
+            <p class="paragraph-js">Aulas de <b>javascript</b></p>
+            <p class="paragraph-js">Aprendendo sobre a linguagem do JavaScript</p>
+            <button  onclick="cliqueiNoBotao()" value="escreva algo" class="main-btn">Clique Aqui</button>
+            <p id="result"></p>
+        </div>
+    </div>
+    
+</body>
+
+<style>
+
+    body {
+        background-color: rgb(15, 17, 22);
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+    }
+
+    .container {
+        max-width: 600px;
+        padding: 20px;
+        margin: 0 auto;
+        margin-top: 200px;
+        margin-bottom: 300px;
+        background-color: #fff;
+        border-radius: 7px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 40px;
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+
+    #result {
+        text-align: center;
+        font-size: 40px;
+       
+    }
+
+    #main-input {
+        width: 100%;
+        border: 1px solid #ccc;
+        padding: 10px;
+        font-size: 30px;
+        margin-bottom: 10px;
+        border-radius: 17px;
+    }
+
+    .paragraph-js {
+        font-size: 20px;
+        text-align: center;
+        font-weight: 200;
+        padding-bottom: 7px;
+    }
+
+    .main-btn {
+        padding: 20px;
+        width: 100%;
+        margin-top: 25px;
+        margin-bottom: 50px;
+        font-size: 25px;
+        background: crimson;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 7px;
+    }
+
+</style>
+
+<script src="./elements.js"></script>
+
+</html>
