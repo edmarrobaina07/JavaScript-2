@@ -11,5 +11,7 @@ function troqueiOValor(event) {
     console.log(event)
 }
 
-input.addEventListener("keypress", troqueiOValor)
+
+
+input.addEventListener("change", troqueiOValor)
 
