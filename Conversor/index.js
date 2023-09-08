@@ -2,6 +2,8 @@ const convertButton = document.querySelector(".convert-button")
 
 const currencySelect = document.querySelector(".currency-select")
 
+const currencySelectMoney = document.querySelector(".currency-money")
+
 
 async function convertValues() {
 
@@ -24,7 +26,6 @@ async function convertValues() {
     const libraToday = 6.23
     const bitcoinToday = 127.218*/
 
-    
 
 
     if(currencySelect.value == "dolar") { // se o select estiver selecionado o valor de dólar entre aqui.
@@ -66,13 +67,20 @@ async function convertValues() {
         currency: "BRL"
     }).format(inputCurrencyValue)
 
-
     
 }
 
+
+
+
 function changeCurrency() {
+    
+
     const currencyName = document.getElementById("currency-name")
     const currencyImage = document.querySelector(".currency-img")
+
+    
+
     if(currencySelect.value == "dolar"){
         currencyName.innerHTML = "USD"
         currencyImage.src = "./assets/usd.png"
@@ -93,9 +101,12 @@ function changeCurrency() {
         currencyImage.src = "./assets/bitcoin.png"
     }
 
+
     convertValues()
 
 }
+
+
 
 currencySelect.addEventListener("change", changeCurrency)
 
